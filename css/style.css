@@ -1,0 +1,88 @@
+/*
+  GENERAL  
+*/
+.gb-container{
+  height: 100vh;
+  background-color: rgba(231, 40, 40, 0.8);
+}
+
+
+
+
+/*
+  HEADER  
+*/
+#level{
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label{
+  font-size: 20px;
+}
+
+.game-title{
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 3px 3px 5px rgba(88, 3, 3, 0.748);
+}
+
+.gb-btn{
+  box-shadow: 0 5px 10px black;
+}
+
+
+/*
+  MAIN  
+*/
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0D3B4C;
+  flex-grow: 1;
+}
+
+h2{
+  color: white;
+}
+
+.gb-grid{
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+}
+
+.cell{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+} 
+
+.square100{
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
+.square81{
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+.square49{
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+}
+
+.clicked{
+  background-color: rgba(46, 135, 243, 0.906);
+}
+
+.bomb{
+  background-color: rgba(231, 40, 40, 0.8);
+}
