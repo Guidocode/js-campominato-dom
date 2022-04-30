@@ -1,88 +1,78 @@
-/*
-  GENERAL  
-*/
+
 .gb-container{
   height: 100vh;
-  background-color: rgba(231, 40, 40, 0.8);
+  background-color: rgba(194, 103, 39, 0.83);
 }
 
-
-
-
-/*
-  HEADER  
-*/
-#level{
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+.game-title span{
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 3px 3px 5px rgba(88, 3, 3, 0.748); 
+  color: #0D3B4C;
 }
 
 label{
   font-size: 20px;
 }
 
-.game-title{
-  font-weight: bold;
-  font-size: 40px;
-  text-shadow: 3px 3px 5px rgba(88, 3, 3, 0.748);
-}
-
 .gb-btn{
   box-shadow: 0 5px 10px black;
 }
 
-
-/*
-  MAIN  
-*/
 main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-color: #0D3B4C;
   flex-grow: 1;
-}
-
-h2{
   color: white;
 }
 
-.gb-grid{
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
+.grid{
   width: 500px;
   height: 500px;
 }
 
-.cell{ 
+.cell{
+  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  color: white;
   cursor: pointer;
-} 
+}
 
 .square100{
   width: calc(100% / 10);
   height: calc(100% / 10);
 }
+
 .square81{
   width: calc(100% / 9);
   height: calc(100% / 9);
 }
+
 .square49{
   width: calc(100% / 7);
   height: calc(100% / 7);
 }
 
 .clicked{
-  background-color: rgba(46, 135, 243, 0.906);
+  background-color: rgb(68, 151, 215);
 }
 
 .bomb{
   background-color: rgba(231, 40, 40, 0.8);
+  color: white;
 }
+
+.game-wrapper{
+  position: relative;
+}
+
+.endGame{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+

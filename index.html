@@ -21,40 +21,42 @@
   
 
   <div class="gb-container d-flex flex-column">
-
     <header class="container">
       <div class="row">
-        <div class="col d-flex align-items-center">
-          <span class="game-title">Campo Minato</span>
+        <div class="col">
+          <div class="game-title d-flex align-items-center py-3">
+            <span>Campo Minato</span>
+          </div>
         </div>
-
-        <div class="col d-flex align-items-center">
-          <label for="level">Difficoltà gioco <i class="fa-solid fa-right-long"></i> </label>
-          <select name="level" id="level" class="form-select my-3">
-            <option value="0">easy 100</option>
-            <option value="1">hard 81</option>
-            <option value="2">crazy 49</option>
+        <div class="col d-flex align-items-center py-3">
+          <label for="level">Difficoltà: </label>
+          <select class="form-select mx-3" id="level" name="level">
+            <option value="0" selected>Easy</option>
+            <option value="1">Hard</option>
+            <option value="2">Crazy</option>
           </select>
-    
-          <button type="button" class="btn btn-primary gb-btn" id="play">PLAY</button>
+          <button type="button" id="play" class="btn btn-primary gb-btn">Play</button>
         </div>
       </div>
-
-      
     </header>
 
-
-    <main>
-      <h2>Seleziona il livello di difficoltà e genera la griglia</h2>
-      <!-- <div class="gb-grid"></div> -->
+    <main class="d-flex justify-content-center align-items-center flex-column">
+      
+      <div class="game-wrapper">
+        <h2>Seleziona il livello di difficoltà e genera la griglia</h2>
+      <!-- <div class="grid">
+        <div class="cell square49"><span>x</span></div>
+      </div> -->
+      </div>
+      
+      <h3 class="endMessage"></h3>
     </main>
-    
 
-    <footer></footer>
-
+    <footer class="container py-3">Made with ♥ by Boolean</footer>
   </div>
 
 
+  
 
   <script src="./js/script.js"></script>
 </body>
